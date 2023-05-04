@@ -3,8 +3,8 @@
 sudo apt-get update
 sudo apt-get install -y nginx
 sudo service nginx start
-sudo mkdir -p /data/web_static/shared/
-echo "hello world" | sudo tee /data/web_static/releases/test/index.html > /dev/null
+sudo mkdir -p /data/web_static/shared / /data/web_static/releases/test/ /data/web_static/current
+echo "hello world test" | sudo tee /data/web_static/releases/test/index.html > /dev/null
 sudo rm -rf /data/web_static/current
 ls -sf /data/web_static/releases/test/ /data/web_static/current
 sudo chown -R ubuntu:ubuntu /data/
